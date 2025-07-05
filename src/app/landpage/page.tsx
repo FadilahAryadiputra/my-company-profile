@@ -1,6 +1,15 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 import { Button } from '@/components/ui/button';
+import { Card, CardContent } from '@/components/ui/card';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '@/components/ui/carousel';
 
 import LayeredImage from '@/components/LayeredImage';
 import { BsPalette, BsVectorPen } from 'react-icons/bs';
@@ -105,8 +114,9 @@ export default function Page() {
                 <div className='flex flex-col gap-2'>
                   <div className='font-bold text-lg'>Digital Marketing</div>
                   <div className='text-base/5'>
-                    Elevate your brand&apos;s online presence with out data-driven
-                    digital marketing strategies. From SEO and content marketing
+                    Elevate your brand&apos;s online presence with out
+                    data-driven digital marketing strategies. From SEO and
+                    content marketing
                   </div>
                 </div>
               </div>
@@ -200,6 +210,106 @@ export default function Page() {
                 </Link>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+      <section className='bg-white w-full'>
+        <div className='container mx-auto'>
+          <div className='flex flex-col items-center justify-center gap-4 py-16'>
+            <h1 className='font-bold text-4xl'>Testimonials</h1>
+            <Carousel className='relative w-full px-40'>
+              <CarouselContent>
+                <CarouselItem>
+                  <Card className='bg-gray-200'>
+                    <CardContent className='flex flex-col text-center items-center justify-center px-24 pt-2 pb-12 gap-4'>
+                      <div className='bg-black rounded-full size-[120px] overflow-hidden'>
+                        <Image
+                          src='/images/client-1.jpg'
+                          alt='Client 1'
+                          width={600}
+                          height={600}
+                          className='object-cover'
+                        />
+                      </div>
+                      <div className='font-bold text-xl'>
+                        &quot;Game-changer for our business!&quot;
+                      </div>
+                      <div className='text-lg'>
+                        &quot;Partnering with this agency was the best decision we
+                        made. They didn&apos;t just design a website — they gave us a
+                        platform that converted visitors into loyal customers.
+                        We&apos;ve seen a 60% increase in leads within the first 3
+                        months!&quot;
+                      </div>
+                      <div>
+                        <div className='font-bold'>Jacqueline Miller</div>
+                        <div>CEO of an eduport</div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className='bg-gray-200'>
+                    <CardContent className='flex flex-col text-center items-center justify-center px-24 pt-2 pb-12 gap-4'>
+                      <div className='bg-black rounded-full size-[120px] overflow-hidden'>
+                        <Image
+                          src='/images/client-2.jpg'
+                          alt='Client 2'
+                          width={600}
+                          height={600}
+                          className='object-cover'
+                        />
+                      </div>
+                      <div className='font-bold text-xl'>
+                        &quot;They understood our vision better than we did.&quot;
+                      </div>
+                      <div className='text-lg'>
+                        &quot;From the very first meeting, the team grasped what we
+                        needed and translated it into a digital experience that
+                        resonates with our audience. Our business has never
+                        looked more professional or grown this fast.&quot;
+                      </div>
+                      <div>
+                        <div className='font-bold'>Aiden Warren</div>
+                        <div>Founder of Urban Edge Apparel</div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+                <CarouselItem>
+                  <Card className='bg-gray-200'>
+                    <CardContent className='flex flex-col text-center items-center justify-center px-24 pt-2 pb-12 gap-4'>
+                      <div className='bg-black rounded-full size-[120px] overflow-hidden'>
+                        <Image
+                          src='/images/client-3.jpg'
+                          alt='Client 3'
+                          width={600}
+                          height={600}
+                          className='object-cover'
+                        />
+                      </div>
+                      <div className='font-bold text-xl'>
+                        &quot;Professional, responsive, and results-driven.&quot;
+                      </div>
+                      <div className='text-lg'>
+                        &quot;They treated our business like their own. Weekly
+                        reports, constant communication, and most importantly —
+                        measurable growth. We&apos;ve scaled operations by 2x in
+                        under six months!&quot;
+                      </div>
+                      <div>
+                        <div className='font-bold'>Aiden Warren</div>
+                        <div>Head Operations of Elevate Tech Solutions</div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                </CarouselItem>
+              </CarouselContent>
+              <div className='absolute top-9/10 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
+                <CarouselPrevious />
+                <CarouselNext />
+              </div>
+            </Carousel>
           </div>
         </div>
       </section>

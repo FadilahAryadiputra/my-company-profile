@@ -32,31 +32,37 @@ const Navbar = () => {
           </Link>
         <div className='flex items-center gap-8'>
           <Link
-            href='/'
+            href='/landpage'
             className='hidden text-lg font-medium md:block'
           >
             Home
           </Link>
           <Link
-            href='/about'
+            href='/about-us'
             className='hidden text-lg font-medium md:block'
           >
             About Us
           </Link>
           <Link
-            href='/contact'
+            href='/teams'
+            className='hidden text-lg font-medium md:block'
+          >
+            Teams
+          </Link>
+          <Link
+            href='/'
             className='hidden text-lg font-medium md:block'
           >
             Services
           </Link>
           <Link
-            href='/contact'
+            href='/'
             className='hidden text-lg font-medium md:block'
           >
             Blog List
           </Link>
           <Link
-            href='/contact'
+            href='/'
             className='hidden text-lg font-medium md:block'
           >
             <div className='flex items-center justify-center gap-1'>
