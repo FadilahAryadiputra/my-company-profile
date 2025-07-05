@@ -7,7 +7,6 @@ import { CiLinkedin } from 'react-icons/ci';
 
 const page = () => {
   return (
-    <>
       <main>
         <section className='bg-second min-h-[calc(100vh-80px-297px)] w-full'>
           <div className='container mx-auto p-4 text-white'>
@@ -135,7 +134,6 @@ const page = () => {
           </div>
         </section>
       </main>
-    </>
   );
 };
 
