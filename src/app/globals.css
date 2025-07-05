@@ -3,6 +3,16 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@theme {
+  --breakpoint-xs: 30rem;
+
+  --color-main: #212023;
+  --color-second: #30333B;
+  --color-third: #161616;
+  --color-active: #F0C06C;
+  --color-btn-main: #161616;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);

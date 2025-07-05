@@ -19,14 +19,14 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`bg-none sticky top-0 z-10 px-5 py-1 transition-shadow ${
-        scrolled ? 'shadow-sm shadow-black' : ''
+      className={`bg-none fixed w-full top-[-3px] z-10 px-5 transition-all ${
+        scrolled ? 'shadow-sm shadow-black bg-white text-black py-3' : 'bg-transparent text-white py-6'
       }`}
     >
-      <div className='container mx-auto flex justify-between p-4'>
+      <div className='container mx-auto flex justify-between px-12'>
         <Link
             href='/'
-            className='hidden text-lg font-bold md:block'
+            className='text-lg font-bold'
           >
             ARIA
           </Link>
