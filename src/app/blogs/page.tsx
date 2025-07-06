@@ -15,8 +15,8 @@ export default function Home() {
                 Share Your Knowledge With Our Readers
               </div>
               <Link
-                href={'#'}
-                className='text-black border-black border-1 mx-8 px-5 md:px-6 py-1 md:py-2 rounded-md shadow-md'
+                href={'/blogs/write'}
+                className='text-black border-black border-1 mx-8 px-5 md:px-6 py-1 md:py-2 rounded-md shadow-md hover:bg-gray-400 active:bg-gray-500'
               >
                 <div className='flex gap-2 items-center'>
                   <HiOutlinePencilAlt />

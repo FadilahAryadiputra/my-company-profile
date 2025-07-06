@@ -9,7 +9,7 @@ const BlogList = () => {
 
   return (
     <section className="grid grid-cols-1 md:grid-cols-2 gap-12">
-      {isPending && <BlogCardSkeleton count={3} />}
+      {isPending && <BlogCardSkeleton count={4} />}
 
       {blogs?.map((blog) => (
         <BlogCard key={blog.objectId} blog={blog} />
