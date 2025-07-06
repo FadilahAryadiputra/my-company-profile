@@ -41,7 +41,7 @@ const useCreateBlog = () => {
     onSuccess: async () => {
       alert("create blog success");
       await queryClient.invalidateQueries({ queryKey: ["blogs"] });
-      router.push("/");
+      router.push("/blogs");
     },
     onError: (error: AxiosError<{ message: string; code: number }>) => {
       alert(error.response?.data.message ?? "Something went wrong!");

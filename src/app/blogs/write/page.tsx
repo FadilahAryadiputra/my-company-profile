@@ -1,6 +1,8 @@
+"use client";
+
 import FormWrite from './_components/FormWrite'
 
-export default function Home() {
+const Write = () => {
   return (
     <main>
       <section className='bg-second min-h-[calc(100vh-80px-297px)] w-full'>
@@ -20,3 +22,4 @@ export default function Home() {
     </main>
   );
 }
+export default Write;

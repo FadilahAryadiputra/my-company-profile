@@ -1,5 +1,5 @@
-import { Button } from "./ui/button";
-import { Input } from "./ui/input";
+import { Button } from './ui/button';
+import { Input } from './ui/input';
 
 const Footer = () => {
   return (
@@ -16,45 +16,69 @@ const Footer = () => {
               united focus in out pursuit of mastery and joyful.
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <div className="text-base font-bold">Pages</div>
+          <div className='flex flex-col gap-4'>
+            <div className='text-base font-bold'>Pages</div>
             <ul>
               <li>
-                <a href="#">Home</a>
+                <a href='#'>Home</a>
               </li>
               <li>
-                <a href="#">About Us</a>
+                <a href='#'>About Us</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href='#'>Services</a>
               </li>
               <li>
-                <a href="#">Blog List</a>
+                <a href='#'>Blog List</a>
               </li>
             </ul>
           </div>
-          <div className="flex flex-col gap-4">
-            <div className="text-base font-bold">Utility Pages</div>
+          <div className='flex flex-col gap-4'>
+            <div className='text-base font-bold'>Utility Pages</div>
             <ul>
               <li>Style Guide</li>
-                <li>Instruction</li>
-                <li>License</li>
-                <li>Changelog</li>
+              <li>Instruction</li>
+              <li>License</li>
+              <li>Changelog</li>
             </ul>
           </div>
           <div className='flex flex-col gap-4'>
             <div className='text-base font-bold'>Subscribe</div>
             <div>
-              <form action="">
-                <div className="relative flex flex-col gap-2">
-                  <Input type="email" placeholder="Email" className="bg-white text-black p-2 lg:p-6 rounded-l-full rounded-r-full"/>
-                  <Button type="submit" className="hidden lg:block absolute top-2 right-2 hover:bg-neutral-600 rounded-l-full rounded-r-full">
-                    Subscribe
-                  </Button>
-                  <Button type="submit" className="block lg:hidden hover:bg-neutral-600 rounded-l-full rounded-r-full">
+              <form action='' className='flex flex-col gap-2'>
+                <div className='relative'>
+                  <div className='absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none'>
+                    <svg
+                      className='w-4 h-4 text-gray-500 dark:text-gray-400'
+                      aria-hidden='true'
+                      xmlns='http://www.w3.org/2000/svg'
+                      fill='currentColor'
+                      viewBox='0 0 20 16'
+                    >
+                      <path d='m10.036 8.278 9.258-7.79A1.979 1.979 0 0 0 18 0H2A1.987 1.987 0 0 0 .641.541l9.395 7.737Z' />
+                      <path d='M11.241 9.817c-.36.275-.801.425-1.255.427-.428 0-.845-.138-1.187-.395L0 2.6V14a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V2.5l-8.759 7.317Z' />
+                    </svg>
+                  </div>
+                  <Input
+                    type='search'
+                    id='search'
+                    className='block w-full pr-2 lg:pr-26 py-3 lg:py-6 ps-10 text-sm text-gray-900 border border-gray-300 rounded-l-full rounded-r-full bg-gray-50'
+                    placeholder='Email'
+                    required
+                  />
+                  <Button
+                    type='submit'
+                    className='hidden lg:block text-white absolute top-2 right-2 hover:bg-neutral-600 active:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-l-full rounded-r-full text-sm px-4 py-2'
+                  >
                     Subscribe
                   </Button>
                 </div>
+                <Button
+                  type='submit'
+                  className='block lg:hidden hover:bg-neutral-600 rounded-l-full rounded-r-full w-full'
+                >
+                  Subscribe
+                </Button>
               </form>
             </div>
           </div>
@@ -67,8 +91,8 @@ const Footer = () => {
             <span className='font-bold text-white'>FA</span>
           </div>
           <div className='flex flex-col justify-center text-xs'>
-            <div>@ 2025 Fadilah Aryadiputra</div>
-            <div>Based in Indonesia</div>
+            <div>© 2025 ARIA™</div>
+            <div>All Right Reserved</div>
           </div>
         </div>
       </div>
