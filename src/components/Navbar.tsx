@@ -56,7 +56,7 @@ const Navbar = () => {
             Services
           </Link>
           <Link
-            href='/blog'
+            href='/blogs'
             className='hidden text-lg font-medium md:block'
           >
             Blog List
