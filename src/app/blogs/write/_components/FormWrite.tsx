@@ -11,7 +11,7 @@ import Image from 'next/image';
 import { ChangeEvent, useState } from 'react';
 import * as Yup from 'yup';
 import useCreateBlog from './../_hooks/useCreateBlog';
-// import { AuthGuard } from "@/hoc/AuthGuard";
+import { AuthGuard } from "@/hoc/AuthGuard";
 
 const validationSchema = Yup.object().shape({
   title: Yup.string().required('Title is required'),
@@ -26,7 +26,7 @@ const Write = () => {
 
   const onChangeThumbnail = (
     e: ChangeEvent<HTMLInputElement>,
-    setFieldValue: (field: string, value: unknown) => void
+    setFieldValue: (field: string, value: any) => void
   ) => {
     const files = e.target.files;
 
@@ -37,7 +37,7 @@ const Write = () => {
   };
 
   const removeThumbnail = (
-    setFieldValue: (field: string, value: unknown) => void
+    setFieldValue: (field: string, value: any) => void
   ) => {
     setSelectedImage('');
     setFieldValue('thumbnail', null);
@@ -168,4 +168,4 @@ const Write = () => {
   );
 };
 
-export default Write;
+export default AuthGuard(Write);

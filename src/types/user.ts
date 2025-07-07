@@ -5,7 +5,7 @@ export interface User {
   accountType: "BACKENDLESS" | string;
   socialAccount: string | null;
   ownerId: string;
-  oAuthIdentities: unknown;
+  oAuthIdentities: any;
   name: string;
   ___class: string;
   blUserLocale: string;

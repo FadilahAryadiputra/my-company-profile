@@ -1,6 +1,7 @@
-"use client";
+'use client';
 
-import FormWrite from './_components/FormWrite'
+import FormWrite from './_components/FormWrite';
+import { AuthGuard } from '@/hoc/AuthGuard';
 
 const Write = () => {
   return (
@@ -21,5 +22,5 @@ const Write = () => {
       </section>
     </main>
   );
-}
-export default Write;
+};
+export default AuthGuard(Write);

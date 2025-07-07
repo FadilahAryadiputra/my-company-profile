@@ -17,7 +17,7 @@ const TiptapRichtextEditor: FC<TiptapRichtextEditorProps> = ({
   name,
 }) => {
   const { setFieldValue, setFieldTouched, setFieldError, touched, values } =
-    useFormikContext<Record<string, unknown>>();
+    useFormikContext<any>();
 
   const editor = useEditor({
     extensions: [StarterKit],
