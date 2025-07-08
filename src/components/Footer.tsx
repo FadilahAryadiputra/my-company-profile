@@ -3,7 +3,7 @@ import { Input } from './ui/input';
 
 const Footer = () => {
   return (
-    <footer className='bg-second px-24'>
+    <footer className='bg-second px-4 md:px-24'>
       <div className='container mx-auto flex flex-col justify-between gap-2 p-4 text-white'>
         <div className='xs:grid-cols-2 mt-2 grid grid-cols-1 gap-4 xl:gap-16 text-sm md:grid-cols-4'>
           <div className='flex flex-col gap-4'>
@@ -20,16 +20,16 @@ const Footer = () => {
             <div className='text-base font-bold'>Pages</div>
             <ul>
               <li>
-                <a href='#'>Home</a>
+                <a href='/'>Home</a>
               </li>
               <li>
-                <a href='#'>About Us</a>
+                <a href='/about-us'>About Us</a>
               </li>
               <li>
-                <a href='#'>Services</a>
+                <a href='/services'>Services</a>
               </li>
               <li>
-                <a href='#'>Blog List</a>
+                <a href='/blogs'>Blog List</a>
               </li>
             </ul>
           </div>
@@ -88,7 +88,7 @@ const Footer = () => {
         </div>
         <div className='flex flex-row items-center justify-center gap-2'>
           <div className='flex h-10 w-10 items-center justify-center rounded-full border-2 border-white'>
-            <span className='font-bold text-white'>FA</span>
+            <span className='font-bold text-white'>A</span>
           </div>
           <div className='flex flex-col justify-center text-xs'>
             <div>© 2025 ARIA™</div>
