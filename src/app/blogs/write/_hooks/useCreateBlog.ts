@@ -2,6 +2,7 @@ import { axiosInstance } from "@/lib/axios";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { AxiosError } from "axios";
 import { useRouter } from "next/navigation";
+import { toast } from 'sonner';
 
 interface Payload {
   title: string;
@@ -39,12 +40,13 @@ const useCreateBlog = () => {
       });
     },
     onSuccess: async () => {
+      toast.success('Create blog success');
       alert("create blog success");
       await queryClient.invalidateQueries({ queryKey: ["blogs"] });
       router.push("/blogs");
     },
     onError: (error: AxiosError<{ message: string; code: number }>) => {
-      alert(error.response?.data.message ?? "Something went wrong!");
+      toast.error(error.response?.data.message ?? "Something went wrong!");
     },
   });
 };
