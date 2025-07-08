@@ -13,7 +13,6 @@ import {
   CardFooter,
   CardHeader,
 } from '@/components/ui/card';
-import { Checkbox } from '@/components/ui/checkbox';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Loader } from 'lucide-react';
@@ -34,7 +33,7 @@ const SignUp = () => {
 
   return (
     <main>
-      <section className='bg-second min-h-[calc(100vh-80px-297px)] w-full'>
+      <section className='bg-second min-h-[calc(100vh-233px)] w-full'>
         <div className='container mx-auto p-4 text-white'>
           <div className='flex flex-col items-center my-16 gap-12 p-4 mx-0 lg:mx-20'>
             <Card className='w-full max-w-sm bg-gray-300 border-none shadow-none'>
@@ -58,7 +57,7 @@ const SignUp = () => {
                   <Form>
                     <div className='flex flex-col gap-2'>
                       <div className='grid gap-2'>
-                        <Label htmlFor='name'>Email Address</Label>
+                        <Label htmlFor='name'>Name</Label>
                         <Field
                           name='name'
                           as={Input}

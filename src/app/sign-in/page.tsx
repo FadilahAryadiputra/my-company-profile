@@ -33,7 +33,7 @@ const SignIn = () => {
 
   return (
     <main>
-      <section className='bg-second min-h-[calc(100vh-80px-297px)] w-full'>
+      <section className='bg-second min-h-[calc(100vh-233px)] w-full'>
         <div className='container mx-auto p-4 text-white'>
           <div className='flex flex-col items-center my-16 gap-12 p-4 mx-0 lg:mx-20'>
             <Card className='w-full max-w-sm bg-gray-300 border-none shadow-none'>
